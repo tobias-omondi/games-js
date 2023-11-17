@@ -3,7 +3,8 @@ timeTag = document.querySelector(".time b"),
 flipsTag = document.querySelector(".flips b"),
 refreshBtn = document.querySelector(".details button");
 
-let maxTime = 20;
+// variables
+let maxTime = 30;
 let timeLeft = maxTime;
 let flips = 0;
 let matchedCard = 0;
@@ -11,6 +12,7 @@ let disableDeck = false;
 let isPlaying = false;
 let cardOne, cardTwo, timer;
 
+// function to check whats is happening in our game
 function initTimer() {
     if(timeLeft <= 0) {
         return clearInterval(timer);
